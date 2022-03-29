@@ -1,7 +1,6 @@
 version: 3
 projects:
-- name: atlantis-sample
-  workspace: default
+- workspace: prod
   dir: .
   autoplan:
     enabled: true
