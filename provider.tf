@@ -6,7 +6,7 @@
 
 provider "aws" {
   assume_role {
-    role_arn     = "arn:aws:iam::315719052208:role/roleAWSAdmin"
+    role_arn     = "arn:aws:iam::315719052208:role/atlantis"
     session_name = "${var.atlantis_user}-${var.atlantis_repo_owner}-${var.atlantis_repo_name}-${var.atlantis_pull_num}"
   }
 }
