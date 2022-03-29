@@ -7,5 +7,6 @@ terraform {
     # can't use var.atlantis_user as the session name because
     # interpolations are not allowed in backend configuration
     # session_name = "${var.atlantis_user}" WON'T WORK
+    session_name = "${var.atlantis_user}-${var.atlantis_repo_owner}-${var.atlantis_repo_name}-${var.atlantis_pull_num}"
   }
 }
