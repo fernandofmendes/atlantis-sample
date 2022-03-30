@@ -4,3 +4,10 @@ resource "aws_eip" "vpc_eip" {
         Name = "Atlantis EIP"
     }
 }
+
+resource "aws_eip" "vpc_eip_marcus" {
+    vpc = true
+    tags = {
+        Name = "Marcus EIP"
+    }
+}
